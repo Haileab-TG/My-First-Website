@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Angkor Wat Homepage</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="image/haileab.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  
+</head>
+
+<body onload="checkLocalStorage();">
+
+
+  <!-- Home page Bootsrap Nav bar -->
+
+  
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+      <a class="navbar-brand" href="#"><img class="logo" src="image/mylogo.png" alt="myLogo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="myFriends.html">My Friends</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sitemap.html">Site Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">Search</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Other Pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="about.html">About Me</a>
+              <a class="dropdown-item" href="myfavoriteplaces.html">My Favoriate Places</a>
+              <a class="dropdown-item" href="feedback.html">Feedback</a>
+              <a class="dropdown-item" href="help.html">Help</a>
+              <a class="dropdown-item" href="summary.html">Summary</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://www.google.com/search?" method="GET">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" required name="q" value="">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <a href="login.html" class="btn btn-outline-success my-2 my-sm-0 ml-5" >Login</a>
+      </div>
+    </nav>
+ 
+  
+
+
+    <!-- Home page Bootsrap Carousel -->
+      
+      <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="image/image_1.jpeg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="image/image_3.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="image/image_4.png" alt="Third slide">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="image/image_5.jpg" alt="Third slide">
+          </div>
+
+  
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> -->
+
+      <video autoplay muted loop id="myVideo">
+        <source src="image/angkor.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+      <div class="content">
+        <h1>Welcome to Angkor Wat, <br> Cambodia</h1>
+        <p class="subtitle">Exploring Angkor Wat, Cambodia</p>
+      </div>
+ 
+      
+    <img class="house-top" src="image/Angkor_upper_house.png" alt="Angkor_house-img">
+    
+    <img class="house-bottom" src="image/Angkor_lower_house.png" alt="Angkor_house-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/country/kh"><span style="color:gray;">Current local time in</span><br />Cambodia</a></h3> <iframe class ="Niframe" src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Asia%2FPhnom_Penh" width="100%"  frameborder="0" seamless></iframe> </div>
+          </div>
+          <div class="col-sm-6">
+            <div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/292968"><span style="color:gray;">Current local time in</span><br />Abu Dhabi, United Arab Emirates</a></h3> <iframe class ="Niframe" src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Asia%2FDubai" width="100%" height="0" frameborder="0" seamless></iframe> </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <a class="weatherwidget-io" href="https://forecast7.com/en/10d99104d98/angkor-borei/" data-label_1="ANGKOR WAT" data-label_2="WEATHER" data-theme="blue-mountains" >ANGKOR WAT WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+  
+  <div class="first-col">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/NJyCKj8pCiY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      </div>
+        <div class="col-md-6 seond-col">
+          <h2>Angkor Wat, Cambodia.</h2>
+          <p class="para-home">Angkor Wat is an enormous Buddhist temple complex located in northern Cambodia. It was originally built in the first half of the 12th century as a Hindu temple. Spread across more than 400 acres, Angkor Wat is said to be the largest
+            religious monument in the world. Its name, which translates to “temple city” in the Khmer language of the region, references the fact it was built by Emperor Suryavarman II, who ruled the region from 1113 to 1150, as the state temple and
+            political center of his empire.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Where is Angkor Wat?</h3>
+        <p>Angkor Wat is located roughly five miles north of the modern Cambodian city of Siem Reap, which has a population of more than 200,000 people.
+
+          However, when it was built, it served as the capital of the Khmer empire, which ruled the region at the time. The word “Angkor” means “capital city” in the Khmer language, while the word “Wat” means “temple.”
+
+          Initially, Angkor Wat was designed as a Hindu temple, as that was the religion of the region’s ruler at the time, Suryavarman II. However, by the end of the 12th century, it was considered a Buddhist site.
+
+          Unfortunately, by then, Angkor Wat had been sacked by a rival tribe to the Khmer, who in turn, at the direction of the new emperor, Jayavarman VII, moved their capital to Angkor Thom and their state temple to Bayon, both of which are a few
+          miles to the north of the historic site.
+
+          As Angkor Wat’s significance within the Buddhist religion of the region increased, so too did the legend surrounding the site. Many Buddhists believe the temple’s construction was ordered by the god Indra, and that the work was accomplished
+          in one night.
+
+          However, scholars now know it took several decades to build Angkor Wat, from the design phase to completion.
+        </p>
+       
+      </div>
+
+      <!-- Google map webservice -->
+      <div class="col-md-6">
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=angkor%20wat&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px; padding: 11% 0 0 6%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;}</style></div></div>
+      </div>
+    </div>
+  </div>
+    <!-- Smartsupp Live Chat script -->
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+  var _smartsupp = _smartsupp || {};
+  _smartsupp.key = '7421e8e64f19b8357201008e0a5419027ab8f294';
+  window.smartsupp||(function(d) {
+    var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+    s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+    c.type='text/javascript';c.charset='utf-8';c.async=true;
+    c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+  })(document);
+  </script>
+
+ <div class="container">
+   <div class="row">
+     <div class="col-md-6">
+      <a class="twitter-timeline" data-width="500" data-height="500" data-theme="dark" href="https://twitter.com/TuruhiCommunity?ref_src=twsrc%5Etfw">Tweets by TuruhiCommunity</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+     </div>
+     <div class="col-md-6">
+      <a href="https://info.flagcounter.com/rVXt"><img src="https://s05.flagcounter.com/map/rVXt/size_s/txt_000000/border_CCCCCC/pageviews_0/viewers_0/flags_0/" alt="Flag Counter" border="0"></a>
+    </div>
+   </div>
+ </div>
+
+
+<div class="common-footer">
+    <div class="container ">
+      <div class="row">
+        <div class="col">
+          <div class="bottom-container">
+            <a class="footer-link" href="https://www.linkedin.com/in/haileab-tesfamaryam-4089a4192?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcVlO%2BiY4SL2FhntesIHCeg%3D%3D">LinkedIn</a>
+            <a class="footer-link" href="https://twitter.com/HTesfamaryam">Twitter</a>
+            <a class="footer-link" href="https://www.instagram.com">Instagram</a>
+            <a class="footer-link" href="https://www.Facebook.com">Facebook</a>
+            <a class="footer-link"  href="mailto:Hailat.T@hotmail.com">Email</a>
+            <p class="copyright">© 2021 HTG Site-Pro (Haileab Tesfamaryam Goitum).</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="pic_margin_right" src="image/myLogo.png" alt="Site Logo">
+          <img class="cambodia_footer" src="image/cambodia_footer.png" alt="Cambodia Logo"> 
+        </div>
+
+        <div class="col-md-6">
+          <img class="pic_margin_right" src="image/CTI_footer_Logo.jpg" alt="CTI Logo">
+          <img src="image/ZU_Logo.png" alt="ZU logo">
+        </div>
+      </div>
+    </div>
+  </div>
+ <script src="script/index.js"></script>
+</body>
+
+</html>
