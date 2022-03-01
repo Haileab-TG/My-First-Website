@@ -31,7 +31,7 @@ The webiste is mainly about a touristic place that I would love to vist one day.
 ----
 Beside the website is also composed of many other diverse pages with enourmous functionalities. 
 
-[***Clik Here***](https://haileab-tg.github.io/My-First-Website/index.html) to visit the sitemap of the site to learn the architecture and general structure of the site.
+[***Clik Here***](https://haileab-tg.github.io/My-First-Website/sitemap.html) to visit the sitemap of the site to learn the architecture and general structure of the site.
 
  <br />
 
